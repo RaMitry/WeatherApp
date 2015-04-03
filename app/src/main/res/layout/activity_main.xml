@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="55"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:background="#FFF"
+            tools:context=".MainActivity">
+
+
+
+            <TextView
+                android:id="@+id/countrySH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Country"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:textSize="12sp"
+                android:textColor="#ff7d7d7d"/>
+
+            <TextView
+                android:id="@+id/countrySHResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/countrySH"
+                android:layout_toRightOf="@id/countrySH"
+                android:layout_marginLeft="35dp"
+                android:text="-"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/citySH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/countrySH"
+                android:layout_alignLeft="@id/countrySH"
+                android:layout_marginTop="5dp"
+                android:text="City"
+                android:textSize="12sp"
+                android:textColor="#ff7d7d7d"/>
+
+            <TextView
+                android:id="@+id/citySHResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/citySH"
+                android:layout_toRightOf="@id/citySH"
+                android:layout_alignLeft="@id/countrySHResult"
+                android:text="-"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/sunriseSH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/citySH"
+                android:layout_alignLeft="@id/citySH"
+                android:text="Sunrise"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff7d7d7d"/>
+
+            <TextView
+                android:id="@+id/sunriseSHResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/sunriseSH"
+                android:layout_toRightOf="@id/sunriseSH"
+                android:layout_alignLeft="@id/citySHResult"
+                android:text="-"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/sunsetSH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sunriseSH"
+                android:layout_alignLeft="@id/sunriseSH"
+                android:layout_marginTop="5dp"
+                android:text="Sunset"
+                android:textSize="12sp"
+                android:textColor="#ff7d7d7d"/>
+
+            <TextView
+                android:id="@+id/sunsetSHResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/sunsetSH"
+                android:layout_toRightOf="@id/sunsetSH"
+                android:layout_alignLeft="@id/sunriseSHResult"
+                android:text="-"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/descriptionSH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sunsetSH"
+                android:layout_alignLeft="@id/sunsetSH"
+                android:layout_marginTop="5dp"
+                android:text="Description"
+                android:textSize="12sp"
+                android:textColor="#ff7d7d7d"/>
+
+            <TextView
+                android:id="@+id/descriptionSHResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/descriptionSH"
+                android:layout_toRightOf="@id/descriptionSH"
+                android:layout_alignLeft="@id/sunsetSHResult"
+                android:text="-"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@id/descriptionSH"
+                android:layout_alignLeft="@id/sunsetSHResult"
+                android:layout_marginTop="5dp"
+                android:id="@+id/img"/>
+
+
+
+
+
+            <TextView
+                android:id="@+id/temperatureSH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img"
+                android:layout_alignLeft="@id/descriptionSH"
+                android:layout_marginTop="5dp"
+                android:text="Temperature"
+                android:textSize="12sp"
+                android:textColor="#ff7d7d7d" />
+
+            <TextView
+                android:id="@+id/temperatureSHResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/temperatureSH"
+                android:layout_toRightOf="@id/temperatureSH"
+                android:layout_alignLeft="@id/sunsetSHResult"
+                android:text="-"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <!--<TextView
+                android:id="@+id/minTemperatureSH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temperatureSH"
+                android:layout_alignLeft="@id/temperatureSH"
+                android:layout_marginTop="15dp"
+                android:text="Min temperature"
+                android:textSize="20sp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/minTemperatureSHResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/minTemperatureSH"
+                android:layout_toRightOf="@id/minTemperatureSH"
+                android:layout_alignLeft="@id/temperatureSHResult"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/maxTemperatureSH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/minTemperatureSH"
+                android:layout_alignLeft="@id/minTemperatureSH"
+                android:layout_marginTop="15dp"
+                android:text="Max temperature"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/maxTemperatureSHResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/maxTemperatureSH"
+                android:layout_toRightOf="@id/maxTemperatureSH"
+                android:layout_alignLeft="@id/minTemperatureSHResult"
+                android:textSize="20sp"
+                android:textColor="#000000"/>-->
+
+            <TextView
+                android:id="@+id/humiditySH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/temperatureSH"
+                android:layout_alignLeft="@id/temperatureSH"
+                android:layout_marginTop="5dp"
+                android:text="Humidity"
+                android:textSize="12sp"
+                android:textColor="#ff7d7d7d"/>
+
+            <TextView
+                android:id="@+id/humiditySHResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/humiditySH"
+                android:layout_toRightOf="@id/humiditySH"
+                android:layout_alignLeft="@id/temperatureSHResult"
+                android:text="-"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/windSpeedSH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/humiditySH"
+                android:layout_alignLeft="@id/humiditySH"
+                android:layout_marginTop="5dp"
+                android:text="Wind Speed"
+                android:textSize="12sp"
+                android:textColor="#ff7d7d7d"/>
+
+            <TextView
+                android:id="@+id/windSpeedSHResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/windSpeedSH"
+                android:layout_toRightOf="@id/windSpeedSH"
+                android:layout_alignLeft="@id/humiditySHResult"
+                android:text="-"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:background="#2a305eb4"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.gms.maps.MapFragment"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+<!---->
